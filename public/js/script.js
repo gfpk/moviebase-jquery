@@ -27,9 +27,7 @@ var load = {
 		return newhtmlString
 	},
 };
-
 storage = {};
-
 renderRating = function(){
 	var ratingElements = $('.rating');
 	for (var i = 0; i < ratingElements.length; i++) {
@@ -45,7 +43,6 @@ renderRating = function(){
 		$(ratingElements[i]).html(ratingHtml);		
 	};
 };
-
 hideGallery = function(){
 	$("#canvasinner").html('');
 	$("#canvas").removeClass("active");
@@ -60,11 +57,8 @@ galleryLightBox =function(index){
 	var galleryHtml = "<img src='" + galleryItem.src +"'>";
 	$("#canvasinner").html(galleryHtml);
 }
-
 searchPhrase = '';
 genreFilter = '';
-
-
 var contentdiv = $('#contentarea').first();
 renderBadRoute=function(){
 	load.loadData('partials/404.html', function(data){	
@@ -75,11 +69,9 @@ renderList = function(){
 	load.loadData('partials/list.html', function(data){	
 		var htmlData = data;
 		$(contentdiv).html(data);
-		if(genreFilter != ""){
-			
+		if(genreFilter != ""){			
 			var filtersHtml = "<p>filter: <span class='badge badge-important'>"+ genreFilter +" <a href='/'><i class='glyphicon glyphicon-remove-circle'></i></a></span></p>";
 			$('#filterwrap').html(filtersHtml);
-
 		}
 		load.loadData('data/movies.json', function(data){
 			var jsonData = data;
@@ -110,29 +102,27 @@ renderList = function(){
 };
 renderDetailed = function(item){
 	load.loadData('partials/detailed.html', function(data){	
-			var htmlData = data;
-			load.loadData('data/movies.json', function(data){
-				if(data[item]){
-					var jsonData = data;
-					storage.jsonData = jsonData;			
-					var	htmlResult = load.populateData(htmlData, storage.jsonData[item], "detail");			
-					$(contentdiv).html(htmlResult);
-					renderRating();
-				}else{
-					renderBadRoute();
-				}			
-			});		
-		});
+		var htmlData = data;
+		load.loadData('data/movies.json', function(data){
+			if(data[item]){
+				var jsonData = data;
+				storage.jsonData = jsonData;			
+				var	htmlResult = load.populateData(htmlData, storage.jsonData[item], "detail");			
+				$(contentdiv).html(htmlResult);
+				renderRating();
+			}else{
+				renderBadRoute();
+			}			
+		});		
+	});
 }
-
 searchMovies = function(phrase){
 	var results = [];
 	for (var i = 0; i < storage.jsonData.length; i++) {
 		if(storage.jsonData[i].title.toLowerCase().indexOf(phrase.toLowerCase()) > -1 ){
 			results.push(storage.jsonData[i]);
 		}
-	};
-	
+	};	
 	return results
 };
 searchMoviesByGenre = function(genre){
@@ -159,8 +149,6 @@ var router = function(){
 		renderBadRoute();
 	};
 };
-
 router();
-
 });
 
