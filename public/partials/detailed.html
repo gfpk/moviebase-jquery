@@ -1,0 +1,43 @@
+<div class="wrapper" id="main">
+	<div id="list" >		
+	<section>
+		<article class="item panel panel-default cf">
+			<div class="panel-heading">
+				<h3 class="panel-title"> <a href="#/{{movie.id}}">{{movie.title}}</a><a href="#/{{movie.genre}}" genre="{{movie.genre}}" onclick="genreFilter='{{movie.genre}}';  renderList()"><span class="badge badge-important pull-right">{{movie.genre}}</span></a></h3>
+			</div>
+			<div class="panel-body">
+				<div id="gallery" class="cf">
+					<img class="galleryItem"src="assets/uploads/{{movie.title}}/full/1.jpg" id="mainImage" onclick="revealGallery(0);">
+					<img class="galleryItem"src="assets/uploads/{{movie.title}}/full/2.jpg" onclick="revealGallery(1);">
+					<img class="galleryItem"src="assets/uploads/{{movie.title}}/full/2.jpg" onclick="revealGallery(2);">
+					<img class="galleryItem"src="assets/uploads/{{movie.title}}/full/4.jpg" onclick="revealGallery(3);">
+				</div>
+				
+				{{movie.description}}
+
+				<h5><u>Trivia</u></h5>
+				{{movie.trivia}}
+			</div>
+		
+			<footer class="panel-footer">
+				<span class="label label-warning rating" rating="{{movie.rating}}">
+					
+				</span>
+				&nbsp
+				<span class="label label-info">
+					<i  class="glyphicon glyphicon-usd">{{movie.budget}}</i>
+				</span>
+				&nbsp
+				<span class="label label-success">
+					<i  class="glyphicon glyphicon-user">{{movie.audience}}</i>
+				</span>
+				
+			</footer>
+		
+		</article>
+
+		<a href="/" class="btn btn-block btn-lg btn-primary" onclick="renderList()"><span class="glyphicon glyphicon-arrow-left"></span> back</a>
+		
+	</section>
+	</div>
+</div>

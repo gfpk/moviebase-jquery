@@ -1,0 +1,28 @@
+<article class="item panel panel-default cf">
+	<div class="panel-heading">
+		<h3 class="panel-title"> <a href="#/{{movie.id}}" item="{{movie.id}}" onclick="renderDetailed({{movie.id}});">{{movie.title}}</a>
+			<a href="#/{{movie.genre}}" genre="{{movie.genre}}" onclick="genreFilter='{{movie.genre}}';  renderList()"><span class="badge badge-important pull-right">{{movie.genre}}</span></a></h3>
+	</div>
+	<div class="panel-body">
+		<img class ="pull-left" src="assets/uploads/{{movie.title}}/thumb/thumb.jpg">
+		<p style="margin-left:165px ">{{movie.description}}</p>
+	</div>
+	<footer class="panel-footer">
+		<span class="label label-warning rating" rating="{{movie.rating}}">
+			
+		</span>
+		&nbsp
+		<span class="label label-info">
+			budget: <i  class="glyphicon glyphicon-usd">{{movie.budget}}</i>
+		</span>
+		&nbsp
+		<span class="label label-info">
+			profits: <i  class="glyphicon glyphicon-usd">{{movie.profits}}</i>
+		</span>
+		&nbsp
+		<span class="label label-success">
+			views: <i  class="glyphicon glyphicon-user">{{movie.audience}}</i>
+		</span>
+		
+	</footer>
+</article>

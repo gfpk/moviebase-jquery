@@ -1,0 +1,44 @@
+<html>
+<head>
+	<title>IMDB One Page Concept</title>
+	<link rel="icon" type="image/ico" href="assets/images/favicon.ico" />
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/ze-style.css">
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+
+</head>
+<body>
+	<div id="superwrapper">
+
+		<div id="header">
+			<header id="top" class="wrapper">
+				<div id="branding">
+					<div id="logo pull-left">
+						<a href="/"  onclick="renderList()">
+							<img src="assets/images/logo.png">
+						</a>
+						<div class="input-group pull-right" id="search" >
+					      <input type="text" class="form-control" onkeyup = "searchPhrase = this.value; renderList()">
+					      <span class="input-group-btn">
+					        <button class="btn btn-default" type="button">Go!</button>
+					      </span>
+					    </div>
+					</div>
+				</div>
+			</header>
+		</div>	
+
+		<div id="contentarea">
+		</div>	
+			
+	</div>
+<div id="canvas">
+	<a id="close" href="javaScript:;" onclick="hideGallery();"><i class="glyphicon glyphicon-remove"></i></a>
+	<div id="canvasinner"></div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,41 @@
+[
+    {"id":"0",
+    "title": "The Amazing Spiderman",
+    "genre":"comedy",
+    "rating":4,
+    "audience":87872,
+    "profits":241234,
+    "budget":1234123,
+    "trivia":"Spiderman is not an actual pearson",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+ 	},{"id":"1",
+    "title": "titanic",
+    "genre":"action",
+    "rating":2,
+    "audience":87872,
+    "profits":241234,
+    "budget":1234123,
+    "trivia":"Spiderman is not an actual pearson",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+ 	},
+    {"id":"2",
+    "title": "Krzyzacy",
+    "genre":"action",
+    "rating":4,
+    "audience":87872,
+    "profits":241234,
+    "budget":1234123,
+    "trivia":"Spiderman is not an actual pearson",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+ 	},
+    {"id":"3",
+    "title": "Poranek kojota",
+    "genre":"comedy",
+    "rating":3,
+    "audience":87872,
+    "profits":241234,
+    "budget":1234123,
+    "trivia":"Spiderman is not an actual pearson",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+ 	}
+  ]
